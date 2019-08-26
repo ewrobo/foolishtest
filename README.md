@@ -1,4 +1,4 @@
-# foolish-test
+# foolishtest
 Test for The Motley Fool
 https://fooltest.ewrob.us/ - Live link for your convenience.
 The stylization is kept to a complete minimum, as a "working wireframe".
