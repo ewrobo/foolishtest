@@ -1,0 +1,127 @@
+//Import Variables
+@import "variables";
+
+html, body {
+  padding: 0;
+  margin: 0;
+  color: @color--text;
+  background: @color--background;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+h1 {
+  font-size: @fontsize--h1;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: @fontsize--h2;
+  font-family: 'Roboto Slab',serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+p {
+  font-size: @fontsize--p;
+}
+
+a {
+  color: @color--text-link;
+  text-decoration: none;
+
+  &:hover {
+    color: @color--black;
+  }
+}
+
+header {
+  a {
+    &:hover {
+      color: @color--white;
+    }
+  }
+}
+
+#content {
+  .row.margin-adjust {
+    margin-bottom: 20px;
+  }
+  .margin-top {
+    margin-top: @element-gutter--container;
+  }
+}
+
+#entry {
+  .post-heading {
+    h1 {
+      margin-bottom: 0;
+    }
+    p {
+      font-size: @fontsize--p-alt;
+      margin: (@element-gutter--container / 3) 0 0 0;
+
+      &.stock-info {
+        padding: @element-gutter--container / 3;
+        background: @color--white;
+        border: 1px solid @color--border-sidebar;
+        display: inline-block;
+      }
+
+      &.author-date {
+        font-size: @fontsize--p;
+        margin-top: (@element-gutter--container - 5px )
+      }
+    }
+  }
+
+  p.citation {
+    margin-top: @element-gutter--container / 3;
+  }
+
+  table.wp-block-table {
+    border-collapse: collapse;
+
+    tr {
+      td {
+        padding: @element-gutter--container / 3;
+        border: 1px solid @color--black;
+      }
+    }
+    tr:first-of-type {
+      td {
+        background: @color--table-cell-alt;
+      }
+    }
+  }
+
+  .article-sidebar {
+    margin-right: 0;
+    padding: @element-gutter--container;
+    background: @color--white;
+    border: 1px solid @color--border-sidebar;
+  }
+
+  .company-profile {
+    .profile-text {
+      h3 {
+        margin: 0;
+      }
+      p {
+        margin: 10px 0 0 0;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+header, footer {
+  background: @color--header;
+}
+
+footer {
+  color: @color--white;
+  margin-top: @margin-footer;
+}

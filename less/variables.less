@@ -1,0 +1,67 @@
+//Grid
+@limit--container: 1024px;
+@element-gutter--container: 15px;
+@element-gutter--one: 70px;
+@element-gutter--two: 32px / 2;
+@element-gutter--three: 20px / 2;
+@element-gutter--four: 10px / 2;
+
+@padding--row: 0px;
+
+@margin-footer: 40px;
+
+@mobile-gutter--container: 0px;
+
+@column--max_width: 100%;
+
+//Fonts
+@fontsize--h1: 36px;
+@fontsize--h2: 24px;
+
+@fontsize--p: 14px;
+@fontsize--p-alt: 16px;
+
+//Colors
+@color--white: #ffffff;
+@color--black: #000000;
+@color--header: #444444;
+@color--background: #f3f3f3;
+@color--border-sidebar: #e4e4e4;
+@color--text: @color--black;
+@color--text-link: #63b2cc;
+@color--table-cell: @color--white;
+@color--table-cell-alt: #888888;
+
+//Responsive Breakpoints
+@desktop: ~'only screen and (max-width: 1024px)';
+@tablet: ~'only screen and (min-width: 767px) and (max-width: 995px)';
+@mobilelarge: ~'only screen and (min-width: 481px) and (max-width: 766px)';
+@mobilesmall: ~'only screen and (max-width: 480px)';
+
+//Mix-ins and Operations
+.display-table() {
+  content: " ";
+  display: table;
+}
+
+.clear-both() {
+  clear: both;
+}
+
+.height-100() {
+  height: 100%;
+}
+
+.mobile-important-row() {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.mobile-important-column() {
+  width: calc(~'@{column--max_width}' - (@mobile-gutter--container * 2));
+  height: auto;
+  margin-top: @mobile-gutter--container;
+  margin-left: @mobile-gutter--container;
+  margin-right: @mobile-gutter--container;
+  display: block;
+}
