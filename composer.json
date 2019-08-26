@@ -1,0 +1,14 @@
+{
+    "name": "ewrobo/foolish-test",
+    "description": "Motley Fool Test",
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "wpackagist-plugin/wp-less":">=1.8.0",
+        "wpackagist-plugin/advanced-custom-fields":">=5.8.3",
+    },
+}
